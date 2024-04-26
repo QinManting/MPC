@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="TOPIC_BASE_STATE" default="/mavros/local_position/odom" />
+  <arg name="TOPIC_BASE_CMD" default="/planning/pos_cmd" />
+  <arg name="MPC_PARAMS_FILE"
+    default="$(find controller)/config/mpc_params.yaml" />
+
+  <param name="sim" type="bool" value="false" />
+  <param name="topic_base_state" value="$(arg TOPIC_BASE_STATE)" />
+  <param name="topic_base_command" value="$(arg TOPIC_BASE_CMD) " />
+
+  <rosparam file="$(arg MPC_PARAMS_FILE)" command="load" />
+
+  <node pkg="controller" name="mpc_controller"
+    type="mpc_controller_node" output="screen" />  
+  <!-- <node name="mpcrviz" pkg="rviz" type="rviz"
+    args="-d $(find controller)/rviz/mpc.rviz" required="true" /> -->
+
+</launch>

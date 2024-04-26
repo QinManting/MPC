@@ -1,0 +1,11 @@
+int16 drone_id
+int32 traj_id
+time start_time
+float64 totalDuration
+int16 pieceNum
+uint8 order
+float64[] Duration
+float64[] Xcoeff
+float64[] Ycoeff
+float64[] Zcoeff
+bool captured

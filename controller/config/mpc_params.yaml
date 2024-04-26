@@ -1,0 +1,10 @@
+Horizon: 7
+dt: 0.3 # for sim 0.3 is fine, for real tests 
+low_v_ref: 1.5
+high_v_ref: 1.5
+frequency: 150
+
+u_min: [-2.0, -2.0, -2.0, -1.0]
+u_max: [2.0, 2.0, 2.0, 1.0]
+x_min: [-40.0, -40.0, -40.0, -3.14, -3.14, -3.14]
+x_max: [40.0, 40.0, 40.0, 3.14, 3.14, 3.14]

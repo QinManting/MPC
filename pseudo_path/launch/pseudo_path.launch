@@ -1,0 +1,9 @@
+<launch>
+    <param name="path_num" type="int" value="0" />
+    <param name="path_length" type="int" value="20" />
+    <arg name="TOPIC" default="/reference/polynomial"/>
+    <param name="topic" value="$(arg TOPIC)" />
+    <node name="pseudo_path_publisher" pkg="pseudo_path" type="pseudo_path_publisher"
+        output="screen">
+    </node>
+</launch>
