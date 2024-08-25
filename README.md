@@ -2,6 +2,9 @@
 ## Overview
 该仓库为 nROS-lab 2023届硕士生参加2023RMUA比赛所用MPC控制器代码。
 
+### 分支说明
+新增quadrotor_msgs功能包，该代码可与遥控器代码[px4ctrl](https://git.nrs-lab.com/aerial-vehicle-group/m-drone/code/uav-px4ctrl)联合使用。
+
 ### File Layouts
 **controller**：包含MPC控制器代码代码  
 **pseudo_path**：用于将多项式轨迹转换为一系列离散的路点  
